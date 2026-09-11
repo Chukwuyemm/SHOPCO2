@@ -120,27 +120,8 @@ async function loadProducts() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const shopNowBtn = document.querySelector("#shop-now-btn");
-  const viewAllBtn = document.querySelector("#view-all-btn");
   const subscribeBtn = document.querySelector("#subscribe-btn");
   const newsletterInput = document.querySelector("#newsletter-email");
-
-  if (shopNowBtn) {
-    shopNowBtn.addEventListener("click", () => {
-      document
-        .querySelector(".api-products")
-        ?.scrollIntoView({ behavior: "smooth" });
-    });
-  }
-
-  if (viewAllBtn) {
-    viewAllBtn.addEventListener("click", () => {
-      applyFilter("all");
-      document
-        .querySelector(".api-products")
-        ?.scrollIntoView({ behavior: "smooth" });
-    });
-  }
 
   if (subscribeBtn && newsletterInput) {
     subscribeBtn.addEventListener("click", () => {
