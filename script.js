@@ -14,6 +14,7 @@ function createProductCard(product) {
   card.className = "product-card";
 
   card.innerHTML = `
+  <div class="product-card">
     <div class="product-img-bg">
       <img src="${product.thumbnail}" alt="${product.title}" loading="lazy" />
     </div>
@@ -26,6 +27,7 @@ function createProductCard(product) {
       </div>
       <p class="product-price">$${product.price}</p>
     </div>
+  </div>
   `;
 
   return card;
